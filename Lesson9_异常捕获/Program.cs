@@ -47,7 +47,7 @@
             }
             finally
             {
-                Console.WriteLine("无论是否出错，都会执行这里的代码");
+                Console.WriteLine("无论是否出错，都会执行这里的代码1");
             }
 
             Console.WriteLine("Please enter your name");
