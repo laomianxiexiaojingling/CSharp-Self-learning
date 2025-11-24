@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson8_显示转换", "Les
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson9_异常捕获", "Lesson9_异常捕获\Lesson9_异常捕获.csproj", "{119275F1-A090-4E24-B6D6-626BCA46DD3E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson10_算数运算符", "Lesson10_算数运算符\Lesson10_算数运算符.csproj", "{35B5595F-13D4-49B3-9B48-9B820B00FD20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson11_字符串拼接", "Lesson11_字符串拼接\Lesson11_字符串拼接.csproj", "{934EDECD-2A29-4BCB-8D0A-0DFAA24E7BCC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{119275F1-A090-4E24-B6D6-626BCA46DD3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{119275F1-A090-4E24-B6D6-626BCA46DD3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{119275F1-A090-4E24-B6D6-626BCA46DD3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35B5595F-13D4-49B3-9B48-9B820B00FD20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35B5595F-13D4-49B3-9B48-9B820B00FD20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35B5595F-13D4-49B3-9B48-9B820B00FD20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35B5595F-13D4-49B3-9B48-9B820B00FD20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{934EDECD-2A29-4BCB-8D0A-0DFAA24E7BCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{934EDECD-2A29-4BCB-8D0A-0DFAA24E7BCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{934EDECD-2A29-4BCB-8D0A-0DFAA24E7BCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{934EDECD-2A29-4BCB-8D0A-0DFAA24E7BCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
