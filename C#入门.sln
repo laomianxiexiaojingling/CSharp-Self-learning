@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson11_字符串拼接", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson12_条件运算符", "Lesson12_条件运算符\Lesson12_条件运算符.csproj", "{222B7BFC-A848-47BB-B67F-A04185B4F125}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson_13逻辑运算", "Lesson_13逻辑运算\Lesson_13逻辑运算.csproj", "{799105A3-1107-49E6-BB6F-CCB9C301B3B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{222B7BFC-A848-47BB-B67F-A04185B4F125}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{222B7BFC-A848-47BB-B67F-A04185B4F125}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{222B7BFC-A848-47BB-B67F-A04185B4F125}.Release|Any CPU.Build.0 = Release|Any CPU
+		{799105A3-1107-49E6-BB6F-CCB9C301B3B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{799105A3-1107-49E6-BB6F-CCB9C301B3B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{799105A3-1107-49E6-BB6F-CCB9C301B3B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{799105A3-1107-49E6-BB6F-CCB9C301B3B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
