@@ -1,4 +1,6 @@
-﻿namespace Lesson17_switch语句
+﻿using System.Linq.Expressions;
+
+namespace Lesson17_switch语句
 {
     class Program
     {
@@ -107,6 +109,174 @@
                     break;
             }
             #endregion
+
+            Console.WriteLine("唐老师的工资是由基本工资+绩效决定");
+            Console.WriteLine("请输入学生对于唐老师的评价");
+            int Gongzi = 4000;
+            int Jixiao;
+            char Grade=Convert.ToChar(Console.ReadLine());
+            switch (Grade)
+            {
+                case 'A':
+                    Console.WriteLine("很兴奋");
+                    Jixiao = 500;
+                    Gongzi += Jixiao;
+                    break;
+
+                case 'B':
+                    Console.WriteLine("很充实");
+                    Jixiao = 0;
+                    Gongzi += Jixiao;
+                    break;
+
+                case 'C':
+                    Console.WriteLine("还好吧");
+                    Jixiao = -300;
+                    Gongzi += Jixiao;
+                    break;
+                case 'D':
+                    Console.WriteLine("难理解");
+                    Jixiao = -500;
+                    Gongzi += Jixiao;
+                    break;
+
+                case 'E':
+                    Console.WriteLine("枯燥乏味");
+                    Jixiao = -800;
+                    Gongzi += Jixiao;
+                    break;
+
+               
+            }
+
+            Console.WriteLine("唐老师这个月工资加绩效是" + Gongzi);
+
+            Console.WriteLine("你带了多少钱");
+            int Money=int.Parse(Console.ReadLine());
+            Console.WriteLine("请选择你要哪种咖啡");
+            int Type1 = 5;
+            int Type2 = 7;  
+            int Type3 = 11;
+            string Type = Console.ReadLine();
+            switch (Type)
+            {
+                case "中杯":
+                    Console.WriteLine("你选择的是中杯，需要5元");
+                    if (Money > 5)
+                    {
+                        Console.WriteLine("购买成功");
+                        Money -= 5;
+                        Console.WriteLine("还剩" + Money+"yuan");
+                    }
+                    else
+                    {
+                        Console.WriteLine("钱不够");
+                    }
+                    break;
+
+                case "大杯":
+                    Console.WriteLine("你选择的是大杯，需要7元");
+                    if (Money > 7)
+                    {
+                        Console.WriteLine("购买成功");
+                        Money -= 7;
+                        Console.WriteLine("还剩" + Money + "yuan");
+                    }
+                    else
+                    {
+                        Console.WriteLine("钱不够");
+                    }
+                    break;
+
+                case "超大杯":
+                    Console.WriteLine("你选择的是超大杯杯，需要11元");
+                    if (Money > 11)
+                    {
+                        Console.WriteLine("购买成功");
+                        Money -= 11;
+                        Console.WriteLine("还剩" + Money + "yuan");
+                    }
+                    else
+                    {
+                        Console.WriteLine("钱不够");
+                    }
+                    break;
+            }
+
+
+            Console.WriteLine("输入学生的考试成绩");
+            int Score= Convert.ToInt32(Console.ReadLine());
+            int Level = Score / 10;
+
+            switch (Level)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                    Console.WriteLine("E");
+                    break;
+                case 10:
+                case 9:
+                    Console.WriteLine("A");
+                    break;
+                case 8:
+                    Console.WriteLine("B");
+                    break;
+                case 7:
+                    Console.WriteLine("C");
+                    break;
+                case 6:
+                    Console.WriteLine("D");
+                    break;
+               
+            }
+
+            Console.WriteLine("请在0-9中输入一个数字");
+            try
+            {
+                int num = Convert.ToInt32(Console.ReadKey().KeyChar.ToString());
+                switch (num)
+                {
+                    case 0:
+                        Console.WriteLine("零");
+                        break;
+                    case 1:
+                        Console.WriteLine("一");
+                        break;
+                    case 2:
+                        Console.WriteLine("二");
+                        break;
+                    case 3:
+                        Console.WriteLine("三");
+                        break;
+                    case 4:
+                        Console.WriteLine("四");
+                        break;
+                    case 5:
+                        Console.WriteLine("五");
+                        break;
+                    case 6:
+                        Console.WriteLine("六");
+                        break;
+                    case 7:
+                        Console.WriteLine("七");
+                        break;
+                    case 8:
+                        Console.WriteLine("八");
+                        break;
+                    case 9:
+                        Console.WriteLine("九");
+                        break;
+                }
+            }
+            catch
+            {
+                Console.WriteLine("输入错误，请输入一个数字");
+
+            }  
+            
         }
     }
 } 
