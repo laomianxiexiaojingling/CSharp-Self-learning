@@ -69,53 +69,201 @@
             #region 知识点四 流程控制关键字
             //作用：控制循环逻辑的关键词
             //break：跳出循环
-            while (true)
-            {
-                Console.WriteLine("break之前的代码");
-                break;
-                Console.WriteLine("break之后的代码");
-            }
-            Console.WriteLine("循环外的代码");
-
-
-            //int i = 0;
-            //while(true)
+            //while (true)
             //{
-            //    ++i;
-            //    Console.WriteLine(i);
-            //    if (i == 10)
+            //    Console.WriteLine("break之前的代码");
+            //    break;
+            //    Console.WriteLine("break之后的代码");
+            //}
+            //Console.WriteLine("循环外的代码");
+
+
+            ////int i = 0;
+            ////while(true)
+            ////{
+            ////    ++i;
+            ////    Console.WriteLine(i);
+            ////    if (i == 10)
+            ////    {
+            ////        break;
+            ////    }
+
+            ////}
+            ////Console.WriteLine(i);
+
+            ////continue:回到循环开始 继续执行
+            ////while (true)
+            ////{
+            ////    Console.WriteLine("continue前的代码");
+            ////    continue;
+            ////    Console.WriteLine("continue后的代码");
+            ////}
+            ////Console.WriteLine();
+
+            ////打印1到20之间的奇数
+            //int index = 0;
+            //while (index <= 20)
+            //{
+            //    index++;
+            //    if (index % 2 == 0)
             //    {
-            //        break;
+            //        continue;
+            //    }
+            //    else if(index<=20)
+            //    {
+            //        Console.WriteLine(index);
             //    }
 
             //}
-            //Console.WriteLine(i);
-
-            //continue:回到循环开始 继续执行
-            //while (true)
-            //{
-            //    Console.WriteLine("continue前的代码");
-            //    continue;
-            //    Console.WriteLine("continue后的代码");
-            //}
-            //Console.WriteLine();
-
-            //打印1到20之间的奇数
-            int index = 0;
-            while (index <= 20)
-            {
-                index++;
-                if (index % 2 == 0)
-                {
-                    continue;
-                }
-                else if(index<=20)
-                {
-                    Console.WriteLine(index);
-                }
-                
-            }
             #endregion
+
+            int num = 0;
+            //while(num <= 100){
+            //    Console.WriteLine(num);
+            //    num++;
+            //}
+
+            //Console.WriteLine("在控制台输出1-100之间所有整数的和");
+            //num = 0;
+            //int sum = 0;
+            //while (num <= 100)
+            //{
+            //    sum = sum + num;
+            //    num++;
+            //}
+            //Console.WriteLine("1到100之间所有整数的和"+sum);
+
+            //Console.WriteLine("1到100之间的除了能被7整除之外所有整数的和");
+            //num = 0;
+            //sum = 0;
+            //while (num <= 100)
+            //{
+            //    if (num % 7 != 0)
+            //    {
+            //        sum = sum + num;
+            //        num++;
+            //    }
+            //    else
+            //    {
+            //        num++;
+            //        continue;
+            //    }
+            //}
+            //Console.WriteLine("1到100之间的除了能被7整除之外所有整数的和" + sum);
+
+            //Console.WriteLine("请输入一个数，判断是不是素数");
+            //try
+            //{
+            //    int Sushu = int.Parse(Console.ReadLine());
+            //    int Chushu=2;
+            //    while (true)
+            //    {
+            //        if (Chushu != Sushu)
+            //        {
+            //            if (Sushu % Chushu == 0)
+            //            {
+            //                Console.WriteLine("不是素数");
+            //                break;
+            //            }
+            //            else
+            //            {
+            //                Chushu++;
+            //                continue;
+            //            }
+
+            //        }
+            //        else
+            //        {
+            //            if (Sushu == 1)
+            //            {
+            //                Console.WriteLine("不是素数");
+            //                break;
+            //            }
+            //            else
+            //            {
+            //                Console.WriteLine("是素数");
+            //                break;
+            //            }
+                            
+            //        }
+            //    }
+            //}
+            //catch
+            //{
+            //    Console.WriteLine("输入的不是数字");
+            //}
+
+
+            //Console.WriteLine("请输入用户名和密码");
+            //string Name= Console.ReadLine(); ;
+            //string Password= Console.ReadLine();
+            //while (Name != "admin" || Password != "8888")
+            //{
+            //    if (Name != "admin")
+            //    {
+            //        Console.WriteLine("用户名所悟，请重新输入用户名");
+            //        Console.WriteLine("请重新输入密码");
+            //        Name =Console.ReadLine();
+            //        Password = Console.ReadLine();
+            //        continue;
+            //    }
+            //    else
+            //    {   
+            //        Console.WriteLine("密码错误，请重新输入密码");
+            //        Password=Console.ReadLine();
+            //        continue;
+            //    }  
+            //}
+
+            //Console.WriteLine("请输入班级总人数");
+            //try
+            //{
+            //    int Memeber = Convert.ToInt32(Console.ReadLine());
+            //    int No = 1;
+            //    int sum1 = 0;
+            //    int Score;
+            //    while (No <= Memeber)
+            //    {
+            //        Console.WriteLine("现在是{0}号学员", No);
+            //        Score = Convert.ToInt32(Console.ReadLine());
+            //        No++;
+            //        sum1 += Score;
+
+            //    }
+            //    int avg = sum1 / Memeber;
+            //    Console.WriteLine("平均成绩是{0}，总成绩是{1}", avg, sum1);
+            //}
+            //catch
+            //{
+
+            //}
+
+
+            int sum2 = 0;
+            while (num <= 100)
+            {
+                if (sum2 <= 500)
+                {
+                    sum2 = sum2 + num;
+                    num++;
+                }
+                else
+                {
+                    break;
+                }
+
+            }
+            Console.WriteLine("累加到数字{0}可以使sum大于500", num);
+
+            int People = 100;
+            float IncreaseRate = 0.2f;
+            int Month = 0;
+            while (People < 1000)
+            {
+                People = Convert.ToInt32(People * (1 + IncreaseRate));
+                Month++;
+            }
+            Console.WriteLine("经历了{0}个月看唐老师视频的同学能达到1000人", Month);
         }
     }
 }
