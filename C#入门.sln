@@ -43,6 +43,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson17_switch语句", "Le
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson18_循环语句", "Lesson18_循环语句\Lesson18_循环语句.csproj", "{2434797E-289B-4D0D-AD90-5586B6206ADB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson19_循环语句_dowhile", "Lesson19_循环语句_dowhile\Lesson19_循环语句_dowhile.csproj", "{5E1B0654-A1BB-4F8F-9BE0-AE7BAA52B755}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson20_循环语句_for语句", "Lesson20_循环语句_for语句\Lesson20_循环语句_for语句.csproj", "{47B68B58-2260-47B7-9402-B50EFA27E29C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +133,14 @@ Global
 		{2434797E-289B-4D0D-AD90-5586B6206ADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2434797E-289B-4D0D-AD90-5586B6206ADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2434797E-289B-4D0D-AD90-5586B6206ADB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E1B0654-A1BB-4F8F-9BE0-AE7BAA52B755}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E1B0654-A1BB-4F8F-9BE0-AE7BAA52B755}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E1B0654-A1BB-4F8F-9BE0-AE7BAA52B755}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E1B0654-A1BB-4F8F-9BE0-AE7BAA52B755}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47B68B58-2260-47B7-9402-B50EFA27E29C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47B68B58-2260-47B7-9402-B50EFA27E29C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47B68B58-2260-47B7-9402-B50EFA27E29C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47B68B58-2260-47B7-9402-B50EFA27E29C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

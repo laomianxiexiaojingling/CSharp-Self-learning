@@ -135,19 +135,15 @@
 
             //Console.WriteLine("1到100之间的除了能被7整除之外所有整数的和");
             //num = 0;
-            //sum = 0;
-            //while (num <= 100)
+            //int sum = 0;
+            //while (num < 100)
             //{
-            //    if (num % 7 != 0)
+            //    ++num;
+            //    if (num % 7 == 0)
             //    {
-            //        sum = sum + num;
-            //        num++;
-            //    }
-            //    else
-            //    {
-            //        num++;
             //        continue;
             //    }
+            //    sum = sum + num;
             //}
             //Console.WriteLine("1到100之间的除了能被7整除之外所有整数的和" + sum);
 
@@ -155,38 +151,26 @@
             //try
             //{
             //    int Sushu = int.Parse(Console.ReadLine());
-            //    int Chushu=2;
-            //    while (true)
+            //    int Chushu = 2;
+            //    while (Chushu<Sushu)
             //    {
-            //        if (Chushu != Sushu)
-            //        {
-            //            if (Sushu % Chushu == 0)
-            //            {
-            //                Console.WriteLine("不是素数");
-            //                break;
-            //            }
-            //            else
-            //            {
-            //                Chushu++;
-            //                continue;
-            //            }
 
-            //        }
-            //        else
+            //        if (Sushu % Chushu == 0)
             //        {
-            //            if (Sushu == 1)
-            //            {
-            //                Console.WriteLine("不是素数");
-            //                break;
-            //            }
-            //            else
-            //            {
-            //                Console.WriteLine("是素数");
-            //                break;
-            //            }
-                            
+            //            break;
             //        }
+            //        Chushu++;
+
             //    }
+            //    if (Chushu != Sushu)
+            //    {
+            //        Console.WriteLine("不是素数");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("是素数");
+            //    }
+
             //}
             //catch
             //{
@@ -239,31 +223,100 @@
             //}
 
 
-            int sum2 = 0;
-            while (num <= 100)
+            //int sum2 = 0;
+            //while (num <= 100)
+            //{
+            //    if (sum2 <= 500)
+            //    {
+            //        num++;
+            //        sum2 = sum2 + num;
+            //        ;
+            //    }
+            //    else
+            //    {
+            //        break;
+            //    }
+
+            //}
+            //Console.WriteLine("累加到数字{0}可以使sum大于500", num);
+
+            //int People = 100;
+            //float IncreaseRate = 0.2f;
+            //int Month = 0;
+            //while (People < 1000)
+            //{
+            //    People = Convert.ToInt32(People * (1 + IncreaseRate));
+            //    Month++;
+            //}
+            //Console.WriteLine("经历了{0}个月看唐老师视频的同学能达到1000人", Month);
+
+            //斐波那契数列 从第三个数开始 每个数的值等于前两个数相加
+            int n1=1, n2 = 1;
+            int index = 0;
+            int result=0;
+            while (index < 20)
             {
-                if (sum2 <= 500)
+                ++index;
+                if (index == 1)
                 {
-                    sum2 = sum2 + num;
-                    num++;
+                    result = n1;
+                }
+                else if (index == 2)
+                {
+                    result = n2;
+                }
+                else if(index==3)
+                {
+                    //从第三个数以后都是用前两个数相加的到结果
+                    //2=1+1；
+                    //目前算的第三个数
+                    result = n1 + n2;
                 }
                 else
                 {
-                    break;
+                    //接下来要算第四个数
+                    n1 = n2;
+                    n2 = result;
+                    result = n1 + n2;
+                }
+            }
+            Console.WriteLine(result);
+
+
+
+
+
+
+            try
+            {
+                int Sushu = 2;
+                int Chushu = 2;
+                while (Sushu <= 100)
+                {
+                    Chushu = 2;
+                    while (Chushu < Sushu)
+                    {
+                        if (Sushu % Chushu == 0)
+                        {
+                            break;
+                        }
+                        Chushu++;
+                    }
+                    if(Chushu == Sushu)
+                    {
+                        Console.WriteLine("{0}是素数", Sushu);
+                    }
+                    
+                    Sushu++;
                 }
 
+                
             }
-            Console.WriteLine("累加到数字{0}可以使sum大于500", num);
-
-            int People = 100;
-            float IncreaseRate = 0.2f;
-            int Month = 0;
-            while (People < 1000)
+            catch
             {
-                People = Convert.ToInt32(People * (1 + IncreaseRate));
-                Month++;
+                Console.WriteLine("输入的不是数字");
             }
-            Console.WriteLine("经历了{0}个月看唐老师视频的同学能达到1000人", Month);
-        }
+
+}
     }
 }
